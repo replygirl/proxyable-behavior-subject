@@ -7,7 +7,7 @@ _Note: I literally haven't tested this_
 ## Installation
 
 ```bash
-yarn add @replygirl/change-case-object
+yarn add @replygirl/proxied-behavior-subject
 ```
 
 ## Usage
@@ -34,4 +34,4 @@ console.info(f.bar, foo.value.bar) // true, true
 
 ## License
 
-[ISC (c) 2020 replygirl](https://github.com/replygirl/change-case-object/blob/main/LICENSE.md)
+[ISC (c) 2020 replygirl](https://github.com/replygirl/proxied-behavior-subject/blob/main/LICENSE.md)
