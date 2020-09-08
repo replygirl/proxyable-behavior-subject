@@ -1,4 +1,4 @@
-# `ProxiedBehaviorSubject`
+# `ProxyableBehaviorsubject`
 
 A `BehaviorSubject` that returns a `Proxy`. All the reactivity, without having to call `next`!
 
@@ -7,15 +7,15 @@ _Note: I literally haven't tested this_
 ## Installation
 
 ```bash
-yarn add @replygirl/proxied-behavior-subject
+yarn add @replygirl/proxyable-behavior-subject
 ```
 
 ## Usage
 
 ```ts
-import ProxiedBehaviorSubject from '@replygirl/proxied-behavior-subject'
+import ProxyableBehaviorsubject from '@replygirl/proxyable-behavior-subject'
 
-const foo = new ProxiedBehaviorSubject({
+const foo = new ProxyableBehaviorsubject({
   bar: true
 })
 
@@ -34,4 +34,4 @@ console.info(f.bar, foo.value.bar) // true, true
 
 ## License
 
-[ISC (c) 2020 replygirl](https://github.com/replygirl/proxied-behavior-subject/blob/main/LICENSE.md)
+[ISC (c) 2020 replygirl](https://github.com/replygirl/proxyable-behavior-subject/blob/main/LICENSE.md)
