@@ -15,10 +15,7 @@ yarn add @replygirl/proxyable-behavior-subject
 ```ts
 import ProxyableBehaviorsubject from '@replygirl/proxyable-behavior-subject'
 
-const foo = new ProxyableBehaviorsubject({
-  bar: true
-})
-
+const foo = new ProxyableBehaviorsubject({ bar: true })
 const f = foo.proxy
 
 console.info(f.bar, foo.value.bar) // true, true
