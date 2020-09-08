@@ -1,6 +1,6 @@
 import { BehaviorSubject } from 'rxjs'
 
-export class ProxyableBehaviorsubject<T> extends BehaviorSubject<T> {
+export class ProxyableBehaviorSubject<T> extends BehaviorSubject<T> {
   private _proxy: ProxyConstructor =
     new Proxy<any>(this.value, {
       get: (_x, k) => this.value[k],
@@ -18,4 +18,4 @@ export class ProxyableBehaviorsubject<T> extends BehaviorSubject<T> {
   public get p(): ProxyConstructor { return this.proxy }
 }
 
-export default ProxyableBehaviorsubject
+export default ProxyableBehaviorSubject

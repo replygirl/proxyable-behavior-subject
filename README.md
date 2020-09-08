@@ -1,4 +1,4 @@
-# `ProxyableBehaviorsubject`
+# `ProxyableBehaviorSubject`
 
 A `BehaviorSubject` that returns a `Proxy`. All the reactivity, without having to call `next`!
 
@@ -13,9 +13,9 @@ yarn add @replygirl/proxyable-behavior-subject
 ## Usage
 
 ```ts
-import ProxyableBehaviorsubject from '@replygirl/proxyable-behavior-subject'
+import ProxyableBehaviorSubject from '@replygirl/proxyable-behavior-subject'
 
-const foo = new ProxyableBehaviorsubject({ bar: true })
+const foo = new ProxyableBehaviorSubject({ bar: true })
 const f = foo.proxy
 console.info(f.bar, foo.value.bar) // true, true
 
