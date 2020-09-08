@@ -17,16 +17,19 @@ import ProxyableBehaviorsubject from '@replygirl/proxyable-behavior-subject'
 
 const foo = new ProxyableBehaviorsubject({ bar: true })
 const f = foo.proxy
-
 console.info(f.bar, foo.value.bar) // true, true
 
-foo.next({ bar: false })
+// set with the proxy and the value will stay in sync
+f.bar = true
+console.info(f.bar, foo.value.bar) // true, true
 
+// call next as usual and the proxy will stay in sync
+foo.next({ bar: false })
 console.info(f.bar, foo.value.bar) // false, false
 
-f.bar = true
-
-console.info(f.bar, foo.value.bar) // true, true
+// use the p alias to skip assignment
+foo.p.bar = true
+console.info(foo.p.bar, foo.value.bar) // true, true
 ```
 
 ## License
