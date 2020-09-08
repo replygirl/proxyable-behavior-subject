@@ -1,7 +1,7 @@
 {
   "name": "@replygirl/proxyable-behavior-subject",
   "version": "0.0.0",
-  "description": "Recursively change the case of an object's keys",
+  "description": "BehaviorSubject that returns a Proxy",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
