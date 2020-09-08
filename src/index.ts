@@ -11,3 +11,5 @@ export class ProxyableBehaviorSubject<T> extends BehaviorSubject<T> {
     })
   }
 }
+
+export default ProxyableBehaviorSubject
