@@ -30,6 +30,6 @@
     "dist/**/*"
   ],
   "dependencies": {
-    "rxjs": "^6.6.3"
+    "rxjs": "^7.0.1"
   }
 }
